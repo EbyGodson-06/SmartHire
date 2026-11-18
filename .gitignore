@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Model artifacts (Large binaries >100MB, e.g. job_tfidf_matrix.npz 326MB)
+models/*.pkl
+models/*.npz
+models/*.joblib
+*.pkl
+*.npz
+*.joblib
+!models/.gitkeep
+
+# Data files (Exceeds GitHub 100MB limit: raw 52MB, processed parquet 234MB)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Scratch and temporary testing files
+scratch/
+*.png
+!reports/figures/*.png
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
